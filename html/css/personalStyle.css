@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/********************************************************************首页pc端样式**********************/
+@media screen and (min-width: 900px){
+.no-pc{
+	display:none;
+}
+header{
+	width: 1200px;
+	height:90px;
+	background: #40bad2;
+	margin: 0 auto;
+	padding: 30px 0 0 28px;
+}
+header img{
+	margin-right: 40px;
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	/*与下面的内外边距结合使用，使得左边高度随着右边的变化而变化（障眼法）*/
+}
+.main .left{
+	float: left;
+	width: 270px;
+	background: #d1eef4;
+	border-right: 1px solid #40bad2;
+	padding-bottom: 4000px;
+	margin-bottom: -4000px;
+}
+.main .left img{
+	margin: 34px;
+}
+.main .left nav ul li{
+	position: relative;
+	padding-left: 42px;
+	line-height: 52px;
+	font-size:18px ;
+}
+.main .left nav ul li.act,.main .left nav ul li:hover{
+	background: #40bad2;
+}
+.main .left nav ul li.act a,.main .left nav ul li:hover a{
+	color: #fff;
+}
+/*伪类，设置为块级元素，宽高为0，内容物都为空，只设一个边框
+相当于在li里面有添加了一块，其实可以直接写在.html里，但是写在.css里就可以减轻html的加载负担
+伪类after相当于是li的子级
+这里再用相对定位与绝对定位相结合，便可以改变三角形的位置*/
+.main .left nav ul li.act:after,.main .left nav ul li:hover:after{
+	position: absolute;
+	left:100%;/*距离左边100%*/
+	bottom:17px;
+	display: block;
+	width: 0;
+	height: 0;
+	content:"";
+	border:10px solid transparent;
+	border-left: 10px solid #40bad2;
+}
+.main .left nav ul li a{
+	color:#333 ;
+}
+.main .left nav ul li a i{
+	float: left;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin: 14px 6px 0 0;
+	font-size: 24px;
+}
+.main .right{
+	float: left;
+	width: 930px;
+	padding: 32px;
+	/*font-size: 0;*/
+}
+.main .right section{
+	font-size: 0;
+}
+.main .right section h1{
+	line-height: 78px;
+}
+.main .right section h1 a i{
+	float: left;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	/*background: url("../images/personal/index40.png") no-repeat;*/
+	margin: 30px 16px 0 0 ;
+}
+.main .right section h1 a{
+	font-size: 18px;
+	color: #333;
+}
+.main .right section a img{
+	margin-right: 12px;
+}
+
+/*------------------首页pc端样式结束---------------*/
+
+
+
+
+
+
+
+/*********************************************************************简介pc端样式***********************/
+
+.aboutmain .right .head{
+	width: 860px;
+	height: 30px;
+	border-bottom: 1px solid #efefef;
+	color: #72b7bc;
+}
+.aboutmain .right .head a{
+	color: #72b7bc;
+}
+.aboutmain .right article{
+	float: left;
+	width: 590px;
+	height: 454px;
+	font-size: 14px;
+	line-height: 28px;
+}
+.aboutmain .right article h1{
+	line-height: 100px;
+	color: #007e86;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 微软雅黑 Regular;
+}
+.aboutmain .right aside{
+	float: left;
+	width: 218px;
+	height: 450px;
+	margin: 10px 0 0 50px;
+}
+.aboutmain .right aside a img{
+	margin-top: 20px;
+}
+/*--------------------简介pc端样式结束---------------*/
+
+
+
+
+
+
+
+/*********************************************************************图集pc端样式结束***********************/
+.picturemain .right .head{
+	width: 860px;
+	height: 30px;
+	border-bottom: 1px solid #efefef;
+	color: #72b7bc;
+}
+.picturemain .right .head a{
+	color: #72b7bc;
+}
+.picturemain .right .pictures{
+	margin-top: 30px;
+	padding-left: 10px;
+}
+.picturemain .right .pictures figure{
+	float: left;
+	margin: 0 20px 40px 0;
+}
+.picturemain .right .pictures figure.nomar{
+	margin-right: 0;
+}
+.picturemain .right .pictures figure figcaption{
+	font-size: 14px;
+	color: #333;
+	font-family: 微软雅黑 Regular;
+	text-align: center;
+	margin-top: 18px;
+}
+/*-------------------------------图集pc端样式结束---------------*/
+
+
+
+
+
+/*********************************************************************图片详情页pc端样式***********************/
+.picdetailmain .right .head{
+	float: left;
+	width: 860px;
+	height: 30px;
+	border-bottom: 1px solid #efefef;
+	color: #72b7bc;
+	margin-bottom: 20px;
+}
+.picdetailmain .right .head a{
+	color: #72b7bc;
+}
+.picdetailmain .right article{
+	float: left;
+	width: 612px;
+	margin-left: 14px;
+}
+.picdetailmain .right article h1{
+	line-height: 46px;
+	color: #007e86;
+	font-size: 24px;
+	font-family: 微软雅黑 ;
+	text-align: center;
+}
+.picdetailmain .right article .time{
+	height: 38px;
+	border-bottom:1px dotted #333;
+	text-align: center;
+}
+.picdetailmain .right article .time .i1{
+	margin-top: -2px;
+}
+.picdetailmain .right article .time .i2{
+	margin-left: 26px;
+}
+.picdetailmain .right article .i3{
+	margin-top: 12px;
+}
+.picdetailmain .right article p{
+	color: #a1a1a1;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 16px;
+}
+.picdetailmain .right article .arc{
+	height:80px;
+	border-top:1px dotted #333;
+	margin-top: 76px;
+	padding-top: 10px;
+	line-height: 30px;
+}
+.picdetailmain .right article .arc a{
+	padding-left: 24px;
+}
+.picdetailmain .right article .arc a.a1{
+	background: url("../images/personal/index42.png") no-repeat;
+}
+.picdetailmain .right article .arc a.a2{
+	background: url("../images/personal/index41.png") no-repeat 0 -6px;
+}
+.picdetailmain .right article .arc a .s1{
+	color: #959595;
+	font-size:14px ;
+	font-family: 微软雅黑 ;
+}
+.picdetailmain .right article .arc a .s2{
+	color: #72b7bc;
+	font-size:14px ;
+	font-family: 微软雅黑 ;
+}
+.picdetailmain .right section{
+	float: left;
+	width:186px;
+	margin-left: 40px;
+}
+.picdetailmain .right section h1{
+	font-size: 14px;
+	color: #007e86;
+	font-weight: bold;
+	line-height: 30px;
+}
+.picdetailmain .right section img{
+	margin-top: 20px;
+}	
+/*-------------------图片详情页pc端样式结束---------------*/
+
+
+
+
+
+
+/*********************************************************************文档详情页pc端样式***********************/
+.arcdetail .right article{
+	width: 640px;
+}
+.picdetailmain .right section{
+	margin-left: 26px;
+}
+.picdetailmain .right article p{
+	color: #6e6e6e;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 16px;
+	font-family: 宋体;
+}
+/*----------------文档详情页pc端样式结束---------------*/
+
+
+
+
+
+
+/*********************************************************************文档pc端样式***********************/
+.arcticlemain .right .head{
+	float: none;
+}
+.arcticlemain .right ul li{
+	position: relative;
+	font-family: 微软雅黑 Regular;
+	font-size: 14px;
+	width: 680px;
+	height: 74px;
+	margin-left: 10px;
+	border-bottom: 1px dotted #007e86;
+}
+.arcticlemain .right ul li a{
+	display: block;
+	color: #007e86;
+	line-height: 32px;
+}
+.arcticlemain .right ul li .p1{
+	line-height: 32px;
+	color: #afb0b0;
+}
+.arcticlemain .right ul li .p2{
+	position: absolute;
+	bottom:38px;
+	right:12px;
+	color: #afb0b0;
+}
+
+/*--------------文档pc端样式结束---------------*/
+
+
+
+
+/*********************************************************************footer 公共pc端样式***********************/
+footer{
+	width: 1200px;
+	margin: 0 auto;
+	background: #d9f1f6;
+}
+footer .link{
+	line-height: 70px;
+	color: #666;
+	font-size:18px;
+	text-align: center;
+}
+footer .link .a1{
+	padding-left: 32px;
+	margin-right: 14px;
+}
+footer .link .a2{
+	padding-left: 22px;
+	margin-right: 14px;
+}
+footer .link .a3{
+	padding-left: 30px;
+	margin-right: 14px;
+}
+footer .link .a1 i{
+	font-size: 24px; 
+	margin-right: 10px;
+}
+footer .link .a2 i{
+	font-size: 28px; 
+	margin-right: 10px;
+}
+footer .link .a3 i{
+	font-size: 20px; 
+	margin-right: 10px;
+}
+.copyright{
+	width: 1200px;
+	line-height: 70px;
+	margin: 0 auto;
+	text-align: center;
+}
+.copyright span.s2{
+	margin-left: 40px;
+}
+}
+
+/********************************************************************pc端样式结束**********************/
+
+
+/***************************************************************首页*****移动端样式**********************/
+@media screen and (max-width: 899px){
+.no-phone{
+	display: none;
+}
+header{
+	text-align: center;
+}
+header a{
+	display: block;
+	width:100%;
+	height:.9rem;
+	background: #40bad2;
+	padding:.3rem 0 0 0;
+}
+header a img{
+	width: 2.4rem;
+}
+header span{
+	display: block;
+	height:1rem;
+	padding-top: .34rem;
+	color: #0ba7b1;
+	font-size:.18rem; 
+}
+.main .left .logo{
+	display: block;
+	height: 4.26rem;
+	overflow: hidden;
+}
+.main .left .logo img{
+	width:100%;
+}
+.main .left nav ul li{
+	float:left;
+	width: 20%;
+	line-height:1.26rem;
+	font-size: .36rem;
+	text-align: center;
+}
+.main .right .banner img{
+	width: 100%;
+}
+.main .right section{
+	padding:.2rem;
+}
+.main .right section h1{
+	width:100%;
+	line-height: 1rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.main .right section h1 a{
+	color: #333;
+}
+.main .right section a img{
+	width: 50%;
+}
+footer .link{
+	width:100%;
+	height:2.22rem;
+	background: #cce5e7;
+	padding: .5rem .4rem;
+	font-size: .18rem;
+	margin-top: .5rem;
+}
+footer .link a{
+	display: block;
+	color: #616161;
+	line-height: .38rem;
+}
+footer .link a i{
+	display:inline-block;
+	width: .4rem;
+	font-size: .28rem;
+	color: #222;
+}
+footer .link a i.fa-mobile{
+	font-size: .36rem;
+}
+.copyright{
+	width: 100%;
+	height: 1.18rem;
+	text-align: center;
+	padding-top: .4rem;
+	color: #a2a2a2;
+	font-size: .12rem;
+}
+
+
+/****************************************************************about****移动端样式**********************/
+.aboutmain .left nav ul li.act a{
+	color: #ff3b60;
+}
+.aboutmain .right article h1{
+	width: 100%;
+	line-height: .94rem;
+	background: #d1eef4;
+	text-align: center;
+	color: #007e86;
+	font-size: .48rem;
+}
+.aboutmain .right article p{
+	display: block;
+	margin: .16rem;
+	padding: .24rem;
+	background: #f3f3f3;
+	color: #a1a1a1;
+	font-size: .28rem;
+	line-height: .3rem;
+}
+.aboutmain .right aside{
+	padding: 0 .22rem 0 .22rem;
+	/*width: 100%;*/
+}
+.aboutmain .right aside a img{
+	width: 100%;
+	margin-bottom: .2rem;
+}
+
+
+/****************************************************************pictures****移动端样式**********************/
+.picturemain .left nav ul li.act a{
+	color: #ff3b60;
+}
+.picturemain .right .pictures{
+	padding: .14rem;
+}
+.picturemain .right .pictures figure{
+	border: 1px solid #c9c9c9;
+	width: 100%;
+	margin-bottom: .26rem;
+}
+.picturemain .right .pictures figure img{
+	width: 100%;
+}
+.picturemain .right .pictures figure figcaption{
+	line-height: .8rem;
+	font-size: .3rem;
+	color: #333;
+	padding: 0 .44rem 0 .3rem;
+}
+.picturemain .right .pictures figure figcaption a{
+	float: right;
+	color: #b2b2b2;
+}
+.picturemain .right .pictures figure figcaption a.a2{
+	margin-right: .4rem;
+}
+.picturemain .right .pictures figure figcaption a.a2:active{
+	color: #ff3b60;
+}
+
+/****************************************************************picdetail****移动端样式**********************/
+.picdetailmain .left nav ul li.act a{
+	color: #ff3b60;
+}
+
+
+
+
+
+
+
+/*********************************************************************************/
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: #ffd8d9;
+}
+.clearfix:after{
+ 	display: block;
+ 	content: "";
+ 	height:0;
+ 	clear: both;
+ 	visibility: hidden;
+ }
+ .clearfix{
+ 	zoom:1;
+ }
+.continer{
+	width:702px;
+	margin:0 auto;
+}
+.head .daohang{
+	margin:0;
+	background: #fff;
+}
+.head .daohang li{
+	float:left;
+}
+.head .daohang li a{
+	display: block;
+	width: 98px;
+	line-height:32px;
+	background:url("../images/flowers/button1.jpg");
+	color: #630002;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 2.2px;
+	
+}
+.body{
+	margin-top: 2px;
+}
+.body .left{
+	float:left;
+	background: #fff;
+	border-radius: 6px;
+	width:178px;
+	/*height: 600px;*/
+}
+
+.body .left .leftTop .denglu{
+	margin: 10px 20px;
+	width:126px;
+	height:60px;
+	font-size: 12px;
+}
+.body .left .leftBody .detail{
+	margin:10px 18px;
+}
+.body .left .leftBody .detail h2{
+	background: #ffd8d9;
+	font-size: 16px;
+} 
+.body .left .leftBody .detail ul li{
+	list-style: none;
+	border-bottom: 1px dotted #999999;
+}
+.body .left .leftBody .detail ul li a{
+	font-size: 12px;
+	color: #000;
+}
+.body .right{
+	float: left;
+	border-radius: 6px;
+	width:518px;
+	height: 200px;
+	margin-left: 4px;
+	/*border: 1px solid #000;*/
+}
+.body .right .box1{
+	width:518px;
+
+	/*border: 1px solid #000;*/
+}
+.body .right .box1 .new li{
+	float:left;
+	margin-left: 1px;
+}
+.body .right .box1 .new li .noMar{
+	margin-right:0;
+}
+.body .right .box2,.body .right .box4{
+	width:518px;
+	background: #fff;
+	padding-bottom: 6px;
+	margin-top: 3px;
+}
+.body .right .box2 .recommend li{
+	float:left;
+	margin-right: 18px;
+	margin-bottom: 10px;
+}
+.body .right .box2 .recommend li.marL{
+	margin-left: 10px;
+}
+.body .right .box2 .recommend a{
+	display: block;
+	width:106px ;
+	height:138px;
+	/*border: 1px solid #000;*/
+
+}
+.body .right .box2 .recommend a.box3{
+	height:126px;
+}
+.body .right .box2 .recommend .name{
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+}
+.body .right .box2 .recommend .price{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+}
+.body .right .box4 ul{
+	float:left;
+	width: 180px;
+	height:74px;
+	margin: 0 20px 0 30px;
+	padding-left: 8px;
+}
+.body .right .box4 ul li{
+		line-height: 12px;
+}
+.body .right .box4 ul li a{
+	font-size: 12px;
+	color: #000;
+
+}

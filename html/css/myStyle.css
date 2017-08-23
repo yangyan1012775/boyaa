@@ -1,0 +1,44 @@
+body {
+			 	background-image:url("../image/Like.png");
+			 	background-repeat: no-repeat;
+			 	background-position: 30px 60px;
+			 	color: #d3759a;
+			 	a:visited;
+	 }
+ a:link{color: #d3759a}
+ a:visited{color: #000}
+ a:hover{color: red}
+ .baidu:active{color:yellow}
+ .d1{
+ 	/*width: 600px;
+ 	height: 100px;*/
+ 	background: #00f;
+ 	border: 2px solid #000;
+ }
+ .clearfix:after{
+ 	display: block;
+ 	content: "";
+ 	height:0;
+ 	clear: both;
+ 	visibility: hidden;
+ }
+ .d2{
+ 	float: left;
+ 	width: 80px;
+ 	height: 80px;
+ 	background: #000;
+ 	border: 2px solid #000;
+ }
+ .d3{
+ 	float: left;
+ 	width: 80px;
+ 	height: 80px;
+ 	background: #ce0000;
+ 	border: 2px solid #000;
+ }
+ .d4{
+ 	width: 600px;
+ 	height: 100px;
+ 	background: red;
+ 	border: 2px solid #000;
+ }

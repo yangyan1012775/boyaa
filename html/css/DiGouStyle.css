@@ -1,0 +1,81 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+p{
+	color: #d52f30;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+.laoda{
+	margin: 40px auto;
+	padding: 0;
+	width: 1200px;
+}
+.d1,.d2,.d3,.d4,.d5{
+	margin:20px auto;
+	padding: 0;
+	width: 1198px;
+	height: 1300px;
+	border: 1.5px dotted #d52f30;
+}
+.d1{
+	margin:0px auto;
+}
+.title{
+	color: #000;
+	text-align: center;
+	margin:0 auto;
+	padding: 0;
+	width: 1194px;
+	height: 30px;
+	border-bottom: 2px solid #d52f30;
+
+}
+ul {
+	list-style: none;
+	margin:0 ;
+	padding: 0;
+}
+.clearfix:after{
+ 	display: block;
+ 	content: "";
+ 	height:0;
+ 	clear: both;
+ 	visibility: hidden;
+ }
+ul li{
+	padding: 10px;
+	float: left;
+}
+img{
+	width: 375px;
+}
+
+.daohang{
+	position: fixed;
+	top:120px;
+	left: 50%;
+	width: 100px;
+	height: 250px;
+	margin: 0 600px;
+}
+.dh li a{
+	display: block;
+	width:80px;
+	height:30px;
+	list-style: none;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	color: #d52f30;
+}
+.dh li a:hover{
+	color: #fff;
+	background: #d52f30;
+
+}

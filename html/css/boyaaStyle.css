@@ -1,0 +1,293 @@
+@charset "utf-8";
+@media screen and (min-width: 1px){
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing:border-box;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;   /*for IE 6,7*/
+}
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:999;
+	width: 100%;
+	height:.58rem;
+	background: #191d3a;
+	/*margin: 0 auto;*/
+	/*border:1px solid red;*/
+}
+header a{
+	float: left;
+	width: .9rem;
+	height:.58rem;
+	line-height: .58rem;
+	color: #818496;
+	font-size: .14rem;
+	border-right: .01rem solid #252947;
+	text-align: center;
+}
+header .a1{
+	display: block;
+	width: 2.1rem;
+	height:.58rem;
+	background: url("../images/boyaa/logo.png") no-repeat;
+	margin-left: 2.8rem;
+}
+/*header .a1{*/
+header .a2{
+	background: #252947;
+	color: #e2e4ed;
+}
+header a.join{
+	display: block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	background: #38b774;
+	/*border:1px solid red;*/
+	border-radius: 2px;
+	margin: 10px 0  0 40px;
+	color: #fff;
+}
+.banner {
+	position: relative;
+}
+.banner a.a1{
+	display: block;
+	width: 100%;
+	height:4.64rem;
+	margin: 0 auto;
+	background: url("../images/boyaa/banner.jpg") no-repeat;
+	background-position:  -3.16rem 0;
+}
+.banner .cir{
+	position: absolute;
+	left:540px;
+	bottom: 4px;
+}
+.banner .cir a i{
+	color: #fdde90;
+	font-size: 12px;
+}
+.banner .cir a i.act{
+	color: #fff;
+}
+.main{
+	width: 100%;
+	padding: .46rem 2.48rem;
+	margin: 0 auto;
+	/*border:.01rem solid red;*/
+	
+}
+.main figure {
+	float: left;
+	width: 2.2rem;
+	height: 1.9rem;
+	margin-right: .36rem;
+}
+.main figure.no-mar{
+	margin-right: 0;
+}
+.main figure .i1{
+	width: 2.18rem;
+}
+.main figure figcaption{
+	color:#444866 ;
+	text-align: center;
+	font-size: .14rem;
+	line-height: .3rem;
+	font-weight: bold;
+}
+.main figure figcaption a{
+	color: #38b774;
+}
+.main figure figcaption a img{
+	margin-left: .06rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*.main hr{
+	color: red;
+}*/
+.hr-cir hr{
+	border:1px solid #dbe1e7;
+	width: 1010px;
+	margin: 0 auto;
+}
+.hr-cir .cir{
+	position: relative;
+	top:-10px;
+	width: 260px;
+	height: 30px;
+	/*border:1px solid red;*/
+	margin: 0 auto;
+	background: #fff;
+}
+.hr-cir .cir a {
+	float: left;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	/*border:1px solid red;*/
+
+}
+.hr-cir .cir a i{
+	display: block;
+	width: 30px;
+	height: 30px;
+	color: #b5c0cb;
+	font-size: 12px;
+}
+.hr-cir .cir a i.act{
+	color: #2fbc71;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.news{
+	width: 100%;
+	height: 4.12rem;
+	padding: 0 1.18rem;
+	margin-top: .5rem;
+	background: url("../images/boyaa/indexmainbg.jpg") ;
+	
+}
+.news .left{
+	float: left;
+	width: 4.98rem;
+	height:3.1rem;
+	background: url("../images/boyaa/bynewsbg.jpg") no-repeat;
+	margin-left: 1.32rem;
+	/*padding-top: 120px;*/
+}
+.news .left a{
+	display: block;
+	width: .8rem;
+	height: .4rem;
+	background: url("../images/boyaa/more.png") no-repeat;
+	margin: .4rem 0 0 2.18rem;
+}
+.news .left ul{
+	margin-top: .34rem;
+}
+.news .left ul li{
+	width: 4.60rem;
+	line-height:.14rem;
+	border-bottom: .01rem solid #dbe1e7;
+}
+.news .left ul li .s1{
+	color: #cac4cf;
+	font-size: .12rem;
+}
+.news .left ul li .s2{
+	color: #444866;
+	font-size: .14rem;
+	margin-left: .2rem;
+}
+.news .right{
+	float: left;
+	width: 4.98rem;
+	height:3.1rem;
+	background: url("../images/boyaa/byhrbg3.jpg") no-repeat;
+	color: #fff;
+}
+.news .right .title{
+	float: left;
+	margin: .36rem 0 0 .8rem;
+}
+.news .right .title .p1{
+	font-size:.28rem ;
+	font-weight: bold;
+}
+.news .right .title .p2{
+	font-size:.12rem ;
+}
+.news .right .more{
+	float: left;
+	display: block;
+	width: .8rem;
+	height: .4rem;
+	background: url("../images/boyaa/more2.png") no-repeat;
+	margin: .4rem 0 0 .18rem;
+}
+.news .right .detail{
+	width: 3.14rem;
+	height: 1.8rem;
+	margin:110px 0 0 20px;
+}
+.news .right .p3{
+	font-size:.14rem ;
+	font-weight: bold;
+}
+.news .right ul li {
+	line-height: .38rem;
+	font-size: .14rem;
+	border-bottom:1px solid #6fdea3;
+}
+.news .right ul li a{
+	color: #fff;
+}
+footer{
+	width: 100%;
+	color: #6c6e7e;
+	line-height: .9rem;
+	background: #191d3a;
+	font-size:.12rem ;
+	padding: 0 2.5rem;
+	/*border:1px solid red;*/
+
+}
+footer a{
+	color: #6c6e7e;
+}
+footer span{
+	color: ;
+	margin-left: 1.64rem;
+}
+footer img{
+	float: right;
+	display: block;
+	width: .5rem;
+	height: .7rem;
+	margin-top: .14rem;
+}
+
+
+
+}
